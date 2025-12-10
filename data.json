@@ -1,0 +1,30 @@
+{
+    "overview": {
+        "title": "Wprowadzenie do RAID",
+        "content": "<p>RAID (Redundant Array of Independent Disks) to technologia, która łączy wiele dysków twardych w jeden logiczny wolumin...</p>"
+    },
+    "raid1": {
+        "title": "RAID 1",
+        "content": "<p>RAID 1 zapewnia pełną redundancję dzięki mirroringowi...</p>"
+    },
+    "raid5": {
+        "title": "RAID 5",
+        "content": "<p>RAID 5 zapewnia równocześnie wysoką wydajność i redundancję...</p>"
+    },
+    "raid10": {
+        "title": "RAID 10",
+        "content": "<p>RAID 10 łączy funkcje RAID 0 i RAID 1, zapewniając szybki dostęp do danych...</p>"
+    },
+    "comparison": {
+        "title": "Porównanie RAID",
+        "content": "<p>Porównaj różne poziomy RAID...</p>"
+    },
+    "benefits": {
+        "title": "Korzyści RAID",
+        "content": "<ul><li>Wysoka wydajność...</li><li>Redundancja danych...</li></ul>"
+    },
+    "faq": {
+        "title": "FAQ",
+        "content": "<ul><li>Co to jest RAID?</li><li>Jakie są różnice między RAID 1 a RAID 5?</li></ul>"
+    }
+}
