@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAID - Wszystko o RAID</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Górna nawigacja -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="loadContent('overview')">Wprowadzenie do RAID</a></li>
+                <li><a href="#" onclick="loadContent('raid1')">RAID 1</a></li>
+                <li><a href="#" onclick="loadContent('raid5')">RAID 5</a></li>
+                <li><a href="#" onclick="loadContent('raid10')">RAID 10</a></li>
+                <li><a href="#" onclick="loadContent('comparison')">Porównanie RAID</a></li>
+                <li><a href="#" onclick="loadContent('benefits')">Korzyści RAID</a></li>
+                <li><a href="#" onclick="loadContent('faq')">FAQ</a></li>
+                <li><a href="#" onclick="toggleDarkMode()">Tryb Ciemny</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Wyszukiwarka -->
+    <section id="search-section">
+        <input type="text" id="search-input" placeholder="Szukaj...">
+        <button onclick="searchContent()">Szukaj</button>
+    </section>
+
+    <!-- Główna treść -->
+    <main>
+        <section id="content">
+            <h1>Witaj na stronie o RAID!</h1>
+            <p>Wybierz temat z menu, aby rozpocząć.</p>
+        </section>
+
+        <section id="raid-diagram">
+            <!-- Tutaj będą animacje lub wykresy RAID -->
+        </section>
+
+        <!-- Tabela porównawcza RAID -->
+        <section id="comparison-table">
+            <h2>Porównanie RAID</h2>
+            <table id="raid-comparison-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortTable(0)">Poziom RAID</th>
+                        <th onclick="sortTable(1)">Redundancja</th>
+                        <th onclick="sortTable(2)">Wydajność</th>
+                        <th onclick="sortTable(3)">Liczba dysków</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RAID 1</td>
+                        <td>Mirroring (pełna redundancja)</td>
+                        <td>Średnia (odczyt szybki)</td>
+                        <td>2+</td>
+                    </tr>
+                    <tr>
+                        <td>RAID 5</td>
+                        <td>Paskowanie + Parzystość</td>
+                        <td>Wysoka (odczyt szybki)</td>
+                        <td>3+</td>
+                    </tr>
+                    <tr>
+                        <td>RAID 10</td>
+                        <td>Mirroring + Paskowanie</td>
+                        <td>Bardzo wysoka</td>
+                        <td>4+</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Sekcja FAQ -->
+        <section id="faq-section">
+            <h2>FAQ</h2>
+            <div id="faq-container">
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFAQ('faq1')">Co to jest RAID?</button>
+                    <div id="faq1" class="faq-answer">
+                        <p>RAID (Redundant Array of Independent Disks) to technologia, która łączy wiele dysków twardych w jeden logiczny wolumin...</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <button class="faq-button" onclick="toggleFAQ('faq2')">Jakie są różnice między RAID 1 a RAID 5?</button>
+                    <div id="faq2" class="faq-answer">
+                        <p>RAID 1 zapewnia pełną redundancję poprzez mirroring, podczas gdy RAID 5 stosuje paskowanie z parzystością...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Stopka -->
+    <footer>
+        <p>&copy; 2025 RAID Info. Wszelkie prawa zastrzeżone.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="raid_diagram.js"></script>
+</body>
+</html>
