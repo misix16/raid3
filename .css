@@ -1,0 +1,187 @@
+/* Resetowanie marginesów i paddingu */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Podstawowe style dla strony */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+#search-section {
+    margin: 20px 0;
+    text-align: center;
+}
+
+#search-input {
+    padding: 10px;
+    width: 60%;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 20px;
+}
+
+#content {
+    margin-bottom: 40px;
+}
+
+#raid-diagram {
+    margin-top: 20px;
+    height: 250px;
+    width: 100%;
+    background-color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+    border-radius: 8px;
+}
+
+/* Tabela porównawcza RAID */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+th:hover {
+    cursor: pointer;
+}
+
+#faq-section {
+    margin-top: 30px;
+}
+
+.faq-item {
+    margin-bottom: 10px;
+}
+
+.faq-button {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 4px;
+}
+
+.faq-button:hover {
+    background-color: #4CAF50;
+}
+
+.faq-answer {
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    display: none;
+}
+
+/* Tryb ciemny */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+header.dark-mode {
+    background-color: #222;
+}
+
+/* Animacje przejść */
+main, section {
+    transition: all 0.3s ease-in-out;
+}
+
+/* Stylizacja przycisków */
+button, .faq-button {
+    transition: background-color 0.3s ease;
+}
+
+button:hover, .faq-button:hover {
+    background-color: #2d6a4f;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Media query */
+@media (max-width: 600px) {
+    nav ul {
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
